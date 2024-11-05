@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>my portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            background: linear-gradient(135deg, #020024, #090979, #00d4ff);
+            color: white;
+            font-family: "Poppins", sans-serif;
+            overflow: hidden; 
+        }
+        .nav {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 50px;
+            background: linear-gradient(45deg, #ff512f, #dd2476);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+            position: relative;
+        }
+        .right {
+            display: flex;
+            justify-content: center;
+            width: 100%;
+        }
+        nav ul {
+            display: flex;
+            justify-content: center;
+            list-style: none;
+            padding: 0;
+        }
+        nav ul li {
+            list-style: none;
+            margin: 0 23px;
+        }
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+            display: flex;
+            align-items: center;
+            transition: transform 0.3s, color 0.3s;
+        }
+        nav ul li a i {
+            margin-right: 8px;
+            color: #00d4ff;
+            text-shadow: 0 0 5px rgba(0, 212, 255, 0.8), 0 0 15px rgba(0, 212, 255, 0.6);
+        }
+        nav ul li a:hover {
+            color: #ffcc00;
+            font-size: 1.5rem;
+            transform: scale(1.1);
+        }
+        .hey {
+            position: absolute;
+            top: 55px; 
+            left: 50%;
+            transform: translateX(-50%);
+            font-size: 5rem;
+            animation: fadeOut 10s forwards;
+            color: #e2cb6f;
+            z-index: 1; 
+        }
+        @keyframes fadeOut {
+            0% { opacity: 1; }
+            100% { opacity: 0; }
+        }
+        .left {
+            font-size: 1.05rem;
+        }
+        .firstSection {
+            display: flex;
+            justify-content: space-around;
+            margin: 130px 0;
+            position: relative; 
+        }
+        .firstSection > div {
+            width: 30%;
+        }
+        .leftSection {
+            font-size: 3rem;
+            width: 30%;
+            align-content: center;
+            vertical-align: center;
+            margin: auto;
+        }
+        .rightSection {
+            width: 80%;
+            margin: 50px 0 50px auto;
+            display: flex;
+            justify-content: center;
+            position: relative;
+        }
+        .rightSection img {
+            width: 300px;
+            border-radius: 50%;
+            border: 5px solid transparent;
+            object-fit: cover;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5), inset 0 0 10px rgba(255, 255, 255, 0.3);
+            transition: transform 0.3s, box-shadow 0.3s, border 0.3s;
+            background-image: linear-gradient(white, white), 
+              linear-gradient(135deg, red, orange, yellow, green, blue, indigo, violet); 
+            background-origin: border-box;
+            background-clip: content-box, border-box;
+        }
+        .rightSection img:hover {
+            transform: scale(1.1) rotate(5deg);
+            box-shadow: 0 0 30px 15px rgba(0, 212, 255, 0.7);
+        }
+        .animated-bg {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(255, 255, 255, 0.1);
+            animation: moveBg 20s linear infinite;
+        }
+        @keyframes moveBg {
+            0% { background-position: 0 0; }
+            100% { background-position: 100% 100%; }
+        }
+        .purple {
+            color: rgb(206, 114, 54);
+        }
+        .sky {
+            color: aqua;
+        }
+        .secondSection {
+            max-width: 80vw;
+            margin: auto;
+            font-size: 1.9rem;
+            height: 80vh;
+        }
+        .text-grey {
+            color: grey;
+        }
+        .aboutSection {
+            max-width: 80vw;
+            margin: auto;
+            font-size: 1.5rem;
+            padding: 20px;
+            background-color: rgba(0, 0, 100, 0.8);
+        }
+        .white {
+            max-width: 60vw;
+            margin: auto;
+            font-size: 1.04rem;
+            padding: 20px 0px;
+            background-color: white;
+        }
+        .secondSection box {
+            width: 80vw;
+            height: 1px;
+            padding: 2px;
+            margin: 56px 0;
+            background: white;
+        }
+        .secondSection .vertical {
+            height: 93px;
+            width: 1px;
+            background-color: white;
+            margin: 0px 100px 100px;
+        }
+        .hover-glow:hover {
+            color: #f2ee09;
+            text-shadow: 0 0 10px #ffcc00, 0 0 20px #ffcc00, 0 0 30px #ffcc00;
+        }
+    </style>
+</head>
+<body>
+    <div class="animated-bg"></div>
+    <header>
+        <nav class="nav">
+            <div class="left"> Amrit's portfolio </div>
+            <div class="hey">Hey !</div>
+            <div class="right">
+                <ul>
+                    <li><a href="/"><i class="fas fa-home"></i> Home</a></li>
+                    <li><a href="about.html"><i class="fas fa-user"></i> About</a></li>
+                    <li><a href="contact.html"><i class="fas fa-envelope"></i> Contact</a></li>
+                    <li><a href="projects.html"><i class="fas fa-folder-open"></i> My Project</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+   
+    <main>
+        <section class="firstSection">
+            <div class="leftSection">
+                <span class="hover-glow">welcome!</span><br> 
+                <span class="purple hover-glow"> Hello, this is <br> AMRIT KUMAR MAHTO</span>
+                <div>I am <span class="sky hover-glow"> NSTIAN</span></div>
+            </div>
+            <div class="rightSection">
+                <img src="image.png" alt="">
+            </div>
+        </section>
+        <hr style="border:0; background: rgb(255, 255, 255); margin: 30px 84px; height:1.7px;">
+    </main>
+</body>
+</html>

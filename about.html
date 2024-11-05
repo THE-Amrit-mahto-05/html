@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me - Amrit's Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            background: linear-gradient(135deg, #000000, #1c1c1c, #383838);
+            color: white;
+            font-family: "Poppins", sans-serif;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .container {
+            max-width: 80vw;
+            margin: auto;
+            padding: 20px;
+            background-color: rgba(0, 0, 0, 0.8);
+            border-radius: 15px;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+            backdrop-filter: blur(10px);
+        }
+        h1 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .content {
+            font-size: 1.5rem;
+        }
+        .icon {
+            color: white;
+            font-size: 2rem;
+            display: block;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .glow:hover {
+            color: #ffcc00;
+            text-shadow: 0 0 10px #ffcc00, 0 0 20px #ffcc00, 0 0 30px #ffcc00;
+        }
+        .back-home {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 20px 0;
+            text-decoration: none;
+            color: white;
+            font-size: 1.5rem;
+            transition: color 0.3s, transform 0.3s;
+        }
+        .back-home i {
+            margin-right: 8px;
+            color: white;
+        }
+        .back-home:hover {
+            color: #ffcc00;
+            transform: scale(1.1);
+        }
+        .social-icons {
+            display: flex;
+            justify-content: center;
+            margin: 20px 0;
+        }
+        .social-icons a {
+            margin: 0 10px;
+            color: white;
+            font-size: 2rem;
+            transition: color 0.3s, transform 0.3s;
+        }
+        .social-icons a:hover {
+            color: #ffcc00;
+            transform: scale(1.2);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 class="glow">About Me <i class="fas fa-user icon"></i></h1>
+        <div class="content">
+            <p class="glow">Hello! I'm Amrit. I am passionate about technology and innovation. I enjoy working on exciting projects and learning new skills. In my free time, I love reading, traveling, and exploring new places. Welcome to my portfolio, and feel free to explore my projects and services!</p>
+        </div>
+        <div class="social-icons">
+            <a href="https://github.com/THE-Amrit-mahto-05" target="_blank"><i class="fab fa-github"></i></a>
+            <a href="https://codeforces.com/profile/Amrit_mahto_05" target="_blank"><i class="fas fa-bolt"></i></a>
+            <a href="https://linkedin.com/in/Amrit Kumar Mahto" target="_blank"><i class="fab fa-linkedin"></i></a>
+            <a href="https://twitter.com/@amrit_mahto_005" target="_blank"><i class="fab fa-twitter"></i></a>
+        </div>
+    </div>
+    <a href="index.html" class="back-home"><i class="fas fa-arrow-left"></i> Back Home</a>
+</body>
+</html>
